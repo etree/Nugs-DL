@@ -55,7 +55,7 @@ def fetchSubInfo():
 	if subInfoGetReq.status_code != 200:
 		print(f"Failed to fetch sub info. Response from API: {subInfoGetReq.text}")
 	elif not cleanJson(subInfoGetReq.text)['Response']:
-		print(f"Failed to fetch sub info. Bad credentials.")	
+		print("Failed to fetch sub info. Bad credentials.")	
 		osCommands("p")
 	else:
 		print(f"Signed in successfully - {cleanJson(subInfoGetReq.text)['Response']['subscriptionInfo']['planName'][9:]} account\n")

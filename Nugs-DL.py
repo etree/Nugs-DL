@@ -44,7 +44,7 @@ def cleanJson(jsonf):
 def login(email, pwd):
 	loginGetReq = session.get(f"https://streamapi.nugs.net/secureapi.aspx?orgn=nndesktop&callback=angular.callbacks._3&method=user.site.login&pw={pwd}&username={email}")
 	if loginGetReq.status_code != 200:
-		print(f"Failed to sign in. Response from API: {loginGetReq.text}")
+		print(f"Sign in failed. Response from API: {loginGetReq.text}")
 		osCommands("p")
 	elif "USER_NOT_FOUND" in loginGetReq.text:
 		print("Sign in failed. Bad credentials.")

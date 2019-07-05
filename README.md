@@ -3,7 +3,8 @@ Tool written in Python to download streamable tracks from nugs.net.
 
 **This is the initial version, so the following are NOT implemented yet:**
 - mp3 support    
-- CLI support    
+- CLI support
+- tagging customization    
 
 ![](https://thoas.feralhosting.com/sorrow/Nugs-DL/ss01.jpg)
 
@@ -20,6 +21,7 @@ The following field values need to be inputted into the config file:
 
 # Misc Info
 - Written around Python v3.6.7.    
+- The cookie to auth with the API will be caught from the login & subscriber info get requests.    
 - Any special characters that your OS doesn't support in filenames will be replaced with "-".    
 - Filename clashes will be handled inside of album folders. If a clash occurs inside an album folder, the previous file will be deleted.     
 If you need to get in touch: Sorrow#5631, [Reddit](https://www.reddit.com/user/Sorrow446)

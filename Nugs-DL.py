@@ -9,7 +9,7 @@ import time
 import urllib
 import platform
 
-#third party
+# third party
 import requests
 from mutagen import File
 from mutagen.flac import FLAC, Picture

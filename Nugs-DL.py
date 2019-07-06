@@ -166,7 +166,7 @@ def main():
 			trackTotal = len([x for x in metaj["Response"]["tracks"]])
 			fetchAlbumCov(metaj)
 			i = 0
-			for item in [x for x in metaj["Response"]["tracks"]]:
+			for item in metaj["Response"]["tracks"]:
 				i += 1
 				fetchTrack(fetchTrackUrl(item["trackID"]), item["songTitle"], i, trackTotal)
 				writeFlacTags(f"{i}.flac", albumArtist, albumTitle, item["songTitle"], i, trackTotal)

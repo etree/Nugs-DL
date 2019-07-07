@@ -12,6 +12,7 @@ Tool written in Python to download streamable tracks from nugs.net.
 The following field values need to be inputted into the config file:
 - email
 - password - in plain text
+- quality - quality track to fetch from API. 1 = 16-bit FLAC, 2 = ALAC, 3 = VBR L4 AAC.
 
 **You can't download ANY tracks with a free account.**
 

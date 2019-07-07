@@ -2,8 +2,7 @@
 Tool written in Python to download streamable tracks from nugs.net.
 
 **This is the initial version, so the following are NOT implemented yet:**
-- mp3 support    
-- CLI support
+- CLI support    
 - tagging customization    
 
 ![](https://thoas.feralhosting.com/sorrow/Nugs-DL/ss01.jpg)

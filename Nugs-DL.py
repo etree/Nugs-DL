@@ -96,7 +96,7 @@ def fetchTrack(trackUrl, trackTitle, trackNum, trackTotal, fExt, x):
 	
 def fetchMetadata(albumId):
 	metadataGetResp = session.get(f"https://streamapi.nugs.net/api.aspx?orgn=nndesktop&callback=angular.callbacks._4&containerID={albumId}&method=catalog.container&nht=1", verify = False)
-		if metadataGetResp.status_code != 200:
+	if metadataGetResp.status_code != 200:
 		print(f"Failed to fetch metadata. Response from API: {metadataGetResp.text}")
 		osCommands("p")
 	else:

@@ -1,6 +1,6 @@
 {
   "email": "",
-  "password": ""
+  "password": "",
   "qualityCom": "1 = 16-bit FLAC, 2 = ALAC, 3 = VBR L4 AAC",
   "quality": "1"
 }
